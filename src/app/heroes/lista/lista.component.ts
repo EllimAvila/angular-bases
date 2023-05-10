@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista.component.css']
 })
 export class ListaComponent {
- listaHeroes:string[]=['Ironman','Capitán América', 'Thor', 'Black Panther', 'Spiderman'];
+ listaHeroes:string[]=['Ironman','Capitán América', 'Thor', 'Black Panther', 'Spiderman', 'Moon Knight'];
  borrado?:string;
 
  borrarUltimoHeroe():void{
