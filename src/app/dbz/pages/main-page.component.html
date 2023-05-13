@@ -1,0 +1,16 @@
+<div class="text-center">
+ <h1>Personajes de Dragon Ball Z</h1>   
+ <hr>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <!-- <app-dbz-lista (onEliminarPersonaje)="dbzService.eliminarPersonaje($event)" [listaPersonajes]="dbzService.personajes"></app-dbz-lista> -->
+            <app-dbz-lista (onEliminarPersonajeId)="onEliminarPersonaje($event)" [listaPersonajes]="personajes"></app-dbz-lista>
+        </div>
+        <div class="col">
+            <app-dbz-formulario (onNuevoPersonaje)="onNuevoPersonaje($event)"></app-dbz-formulario>
+        </div>
+    </div>
+</div>
+

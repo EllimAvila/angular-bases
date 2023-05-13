@@ -1,0 +1,22 @@
+<h4>Lista de personajes</h4>
+<ul class="list-group">
+    <li *ngFor="let i of listaPersonajes; 
+    let indice = index;
+    let esPrimero = first;
+    let esUltimo = last;
+    let esImpar = even;
+    let esPar = odd" 
+    class="list-group-item d-flex justify-content-between align-items-center"
+    [ngClass]="{
+        'list-group-item-primary':esPrimero,
+        'list-group-item-warning':esUltimo,
+    }">
+    <div>
+        {{indice+1 + '. ' + i.nombre+' - '+i.poder.toString()}}
+    </div>
+    <div>
+        <!-- <button class="btn btn-danger" (click)="emitirEliminacion(indice)">X</button> -->
+        <button class="btn btn-danger" (click)="emitirEliminacionId(i.id!)">X</button>
+    </div>
+    </li>
+</ul>
