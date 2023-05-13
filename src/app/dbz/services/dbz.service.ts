@@ -9,7 +9,9 @@ export class DbzService{
     personajes: Personaje[] = [
         {id:uuid(),nombre:'Goku',poder:10000},
         {id:uuid(),nombre:'Vegeta',poder:9999},
-        {id:uuid(),nombre:'Bills',poder:9999999999}
+        {id:uuid(),nombre:'Bills',poder:9999999999},
+        {id:uuid(),nombre:'Jiren',poder:50000},
+        {id:uuid(),nombre:'Kefla',poder:15000}
     ];
 
     registrarPersonaje(personaje:Personaje):void{
